@@ -8,6 +8,11 @@
 <body>
     <h1>My HelloKitty</h1>
     <br>
+
+    {% load crispy_forms_tags %}
+    {% load bootstrap4 %}
+
+
     <form method="POST" class="form-group">
         {% csrf_token %}
         {{form.as_p}}

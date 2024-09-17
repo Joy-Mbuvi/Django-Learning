@@ -34,10 +34,13 @@ INSTALLED_APPS = [
     'django.contrib.admin', #managing data
     'django.contrib.auth', #authenticting users
     'django.contrib.contenttypes',
+    'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bootstrap4',
     'playground',
-    'register'
+    'register',
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [
@@ -126,3 +129,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CRISPY_TEMPLATE_PACK="bootstrap4"
+
+LOGIN_REDIRECT_URL='/playground/hello/'
